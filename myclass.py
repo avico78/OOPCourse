@@ -3,7 +3,6 @@ class MyClass:
 
     d = ['hi',
          'hello'
-         'bye',
-         'llaala']
+         'bye']
     def __init__(self):
         print("hi")
