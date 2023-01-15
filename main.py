@@ -4,15 +4,21 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 from myclass import MyClass
+from translate import Translator
+
+
+translator = Translator(to_lang='pt')
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+    print(name + '->' + translator.translate(name).title() + '\n')  # Press Ctrl+F8 to toggle the breakpoint.
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print(MyClass().d)
-    print_hi('PyCharm' + ':)')
+    for g in MyClass().d:
+
+        print_hi(g)
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
